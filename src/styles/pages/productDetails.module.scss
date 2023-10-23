@@ -1,0 +1,102 @@
+@import '../commons/variables';
+@import '../commons/mixins';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-background;
+  padding-bottom: 16px;
+}
+
+.content {
+  @include maxWidthCenter();
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+
+  .details {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 4px;
+
+    section {
+      display: flex;
+
+      h2 {
+        font-size: 28px;
+        font-weight: normal;
+        color: $color-title;
+        margin: 32px 0;
+      }
+
+      p {
+        font-size: 16px;
+        color: $color-body;
+      }
+
+      @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .imageContainer {
+    padding: 16px;
+    @include imageContainer(100%, 500px);
+    display: flex;
+    flex: 7;
+  }
+
+  .info {
+    display: flex;
+    flex: 3;
+    width: 100%;
+    flex-direction: column;
+
+    span {
+      font-size: 14px;
+      color: $color-text;
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    strong {
+      font-size: 24px;
+      color: $color-title;
+      display: flex;
+      margin-bottom: 32px;
+
+      & + strong {
+        font-size: 46px;
+      }
+    }
+
+    button {
+      height: 36px;
+      border-radius: 4px;
+
+      background-color: $color-secondary;
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: $max-width) {
+    padding: 0 8px;
+  }
+}
+
+.skeletonContainer {
+  @include maxWidthCenter();
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 16px;
+
+  & + .skeletonContainer {
+    margin-top: 0;
+  }
+}

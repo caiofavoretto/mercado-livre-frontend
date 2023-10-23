@@ -1,0 +1,22 @@
+@import '../commons/variables';
+
+.categories {
+  margin: 16px 0;
+}
+
+span.category {
+  font-size: 14px;
+  color: $color-body;
+
+  &:not(:first-of-type)::before {
+    content: '›';
+    color: $color-body;
+
+    font-size: 20px;
+    margin: 0 8px;
+  }
+
+  &:last-of-type {
+    font-weight: bold;
+  }
+}

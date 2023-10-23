@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import './commons/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: $color-background;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

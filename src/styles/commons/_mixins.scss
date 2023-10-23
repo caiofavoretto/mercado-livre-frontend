@@ -1,0 +1,25 @@
+@import './variables';
+
+@mixin maxWidthCenter() {
+  max-width: $max-width;
+  margin: auto;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin imageContainer($width: 124px, $height: 124px) {
+  width: $width;
+  height: $height;
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
