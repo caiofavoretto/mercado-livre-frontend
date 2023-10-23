@@ -2,9 +2,11 @@
 
 Uma aplicação construída utilizando os frameworks react + NextJS
 
-O uso no NextJS se dá para otimizar o carregamento de javascript no navegador, facilitar o roteamento de páginas e melhorar o SEO do projeto como um todo.
+O uso do NextJS se dá para otimizar o carregamento de javascript no navegador, facilitar o roteamento de páginas e melhorar o SEO do projeto como um todo.
 
-**Executando a aplicação**
+Foram feitas algumas melhorias de usabilidade como: o foco do input para pesquisar produtos, o carregamento utilizando **sekeleton load** e os ajustes de layout para dispositivos menores
+
+## Executando a aplicação
 
 Primeiro, execute o servidor de desenvolvimento:
 
